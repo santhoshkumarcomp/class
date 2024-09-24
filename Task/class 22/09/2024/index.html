@@ -4,67 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      a {
-        padding: 20px;
-        display: flex;
-        flex-wrap: nowrap;
-      }
-      menu {
-        /* padding: 20px; */
-        display: flex;
-        flex-wrap: nowrap;
-      }
-      a:visited {
-        color: rgb(250, 250, 250);
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: #1e81b0;
-        font-family: Arial, sans-serif;
-      }
-      aside {
-        width: 25vh;
-        height: 100vh;
-        float: left;
-        background-color: #f9f9fa;
-        color: #1e81b0;
-        padding: 20px;
-        box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
-      }
-      section {
-        left: calc(100%-25vh);
-        background-color: #f9f9fa;
-        color: #1e81b0;
-        padding: 20px;
-        box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
-      }
-      .nav-bar {
-        min-height: 80px;
-        position: sticky;
-        top: 0px;
-        box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
-        /* padding: 20px; */
-        background-color: #1e81b0;
-      }
-      footer {
-        justify-content: center;
-        margin-left: 25vh;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1 style="display: flex; justify-content: center">
-        Welcome to our website!
-      </h1>
       <div class="nav-bar">
         <menu>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <span><a href="#">Home</a></span>
+          <span><a href="#">About</a></span>
+          <span><a href="#">Services</a></span>
+          <span><a href="#">Contact</a></span>
+          <span><a id="title">Welcome to our website!</a></span>
         </menu>
       </div>
     </header>
@@ -74,7 +24,7 @@
       <li>Page 3</li>
       <li>Page 4</li>
     </aside>
-    <section>
+    <main>
       <p>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -93,7 +43,7 @@
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum."
       </p>
-    </section>
+    </main>
     <footer>Thank you</footer>
   </body>
 </html>
