@@ -3,9 +3,10 @@ a {
   color: #f9f9fa;
 }
 #title {
+  font-size: xx-large;
   display: flex;
   justify-content: center;
-  margin-left: 75vh;
+  margin-left: 27vh;
 }
 menu {
   /* padding: 20px; */
@@ -22,16 +23,29 @@ body {
   font-family: Arial, sans-serif;
 }
 aside {
-  top: 60px;
+  position: relative;
+  top: 20px;
+  left: 5px;
   float: left;
   background-color: #f9f9fa;
   color: #1e81b0;
-  padding: 20px;
+  padding-top: 25px;
+  padding-left: 44px;
+  padding-right: 43px;
+  padding-bottom: 45px;
+  height: 120px;
+  overflow-y: auto;
   box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+}
+
+#aside-bar {
+  display: block;
+  align-content: center;
 }
 main {
   /* background-color: #f9f9fa; */
-  top: 40px;
+  position: relative;
+  top: 5px;
   color: #f9f9fa;
   padding-left: 30vh;
   box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
@@ -45,7 +59,11 @@ main {
   background-color: #1e81b0;
 }
 footer {
+  color: white;
+  font-size: x-large;
+  top: 60px;
+  position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin-left: 25vh;
 }
