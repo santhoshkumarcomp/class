@@ -1,12 +1,15 @@
 a {
   padding-left: 20px;
   color: #f9f9fa;
+  text-decoration: none;
 }
 #title {
+  position: fixed;
   font-size: xx-large;
   display: flex;
   justify-content: center;
   margin-left: 27vh;
+  z-index: 1;
 }
 menu {
   /* padding: 20px; */
@@ -21,10 +24,11 @@ body {
   padding: 0;
   background-color: #1e81b0;
   font-family: Arial, sans-serif;
+  height: 1000px;
 }
 aside {
   position: relative;
-  top: 20px;
+  top: 72px;
   left: 5px;
   float: left;
   background-color: #f9f9fa;
@@ -36,27 +40,32 @@ aside {
   height: 120px;
   overflow-y: auto;
   box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+  z-index: 1;
 }
 
 #aside-bar {
   display: block;
   align-content: center;
+  color: #1e81b0;
+  z-index: 4;
 }
 main {
   /* background-color: #f9f9fa; */
   position: relative;
-  top: 5px;
+  top: 50px;
   color: #f9f9fa;
   padding-left: 30vh;
   box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+  z-index: 0;
 }
 .nav-bar {
-  min-height: 40px;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0px;
   box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
   /* padding: 20px; */
   background-color: #1e81b0;
+  z-index: 3;
 }
 footer {
   color: white;
